@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun playGame(buttonNumber: Int, clickedView: Button) {
         if (activePlayer == 1) {
             clickedView.text = "X"
-            clickedView.setBackgroundColor(Color.YELLOW)
+            clickedView.setBackgroundColor(Color.BLACK)
             clickedView.setTextColor(Color.WHITE)
             firstPlayer.add(buttonNumber)
             activePlayer = 2
@@ -168,9 +168,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (winnerPlayer != 0) {
             if (winnerPlayer == 1) {
-                Toast.makeText(this, "X is the Winner !", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "X WINS", Toast.LENGTH_LONG).show()
             } else {
-                Toast.makeText(this, "O is the Winner !", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "O WINS", Toast.LENGTH_LONG).show()
             }
             disableButtons()
         }
@@ -209,15 +209,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             button7.isEnabled = true
             button8.isEnabled = true
             button9.isEnabled = true
-            button1.setBackgroundColor(Color.WHITE)
-            button2.setBackgroundColor(Color.WHITE)
-            button3.setBackgroundColor(Color.WHITE)
-            button4.setBackgroundColor(Color.WHITE)
-            button5.setBackgroundColor(Color.WHITE)
-            button6.setBackgroundColor(Color.WHITE)
-            button7.setBackgroundColor(Color.WHITE)
-            button8.setBackgroundColor(Color.WHITE)
-            button9.setBackgroundColor(Color.WHITE)
+            button1.setBackgroundColor(Color.parseColor("#6200ee"))
+            button2.setBackgroundColor(Color.parseColor("#6200ee"))
+            button3.setBackgroundColor(Color.parseColor("#6200ee"))
+            button4.setBackgroundColor(Color.parseColor("#6200ee"))
+            button5.setBackgroundColor(Color.parseColor("#6200ee"))
+            button6.setBackgroundColor(Color.parseColor("#6200ee"))
+            button7.setBackgroundColor(Color.parseColor("#6200ee"))
+            button8.setBackgroundColor(Color.parseColor("#6200ee"))
+            button9.setBackgroundColor(Color.parseColor("#6200ee"))
             firstPlayer.clear()
             secondPlayer.clear()
             activePlayer = 1
